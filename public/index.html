@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <img id="cancelx" src="images/cancel.png" alt="toggler" class="bar">
+    <div class="container">
+        <nav id="nav">
+            <div class="me">
+                <div class="pic">
+                    <img src="images/tony4.jpg" alt="Jubemi Anthony Pajiah">
+                </div>
+                <h2>Jubemi Anthony Pajiah</h2>
+            </div>
+            <ul class="navs">
+                <li id="username">Username</li>
+                <li id="about">About Me</li>
+                <li id="project">Projects</li>
+                <li id="help0">Help</li>
+            </ul>
+        </nav>
+        <main>
+            <header>
+                <img class="logo" src="images/logo1.png" alt="logo">
+                <h1><span class="sky">ANT-DEVS</span> <span class="pink">QUIZ</span></h1>
+            </header>
+            <div id="sec-a">
+                <section id="sec-1">
+                    <div class="timer-1">
+                        <img id="timer" src="images/alarm.svg" alt="timer">
+                        <img id="noTime" class="hide" src="images/slash-circle.svg" alt="timer">
+                    </div>
+                    <div class="head-1">
+                        <h1>TAKE A QUIZ</h1>
+                    </div>
+                    <div class="social">
+                        <a href="https://github.com/Jubemi-Anthony">
+                            <img src="./images/github.svg" alt="github">
+                        </a>
+                        <a href="https://twitter.com/AnthonyJubemi">
+                            <img src="./images/twitter.svg" alt="twitter">
+                        </a>
+                        <a href="https://facebook.com/Jubemi.Genius">
+                            <img src="./images/facebook.svg" alt="facebook">
+                        </a>
+                        <a href="https://wa.me/+2348120210738">
+                            <img src="./images/whatsapp.svg" alt="whatsapp">
+                        </a>
+                        <a href="https://www.linkedin.com/in/jubemi-anthony-pajiah-626b7323b/">
+                            <img src="./images/linkedin.svg" alt="linkedin">
+                        </a>
+                        <a href="https://t.me/Anthony_Jubemi">
+                            <img src="./images/telegram.svg" alt="telegram">
+                        </a>
+                        <a href="https://www.instagram.com/jubemi_anthony/">
+                            <img src="./images/instagram.svg" alt="instagram">
+                        </a>
+                    </div>
+                    <div class="categories">
+                        <div class="category football">
+                            <div class="card">
+                                <h3>Football</h3>
+                                <div class="top">
+                                    <img src="images/football.jpg" alt="card">
+                                </div>
+                                <p>Football Questions</p>
+                            </div>
+                        </div>
+                        <div class="category random">
+                            <div class="card">
+                                <h3>Random</h3>
+                                <div class="top">
+                                    <img src="images/general.jpg" alt="card">
+                                </div>
+                                <p>Random Questions</p>
+                            </div>
+                        </div>
+                        <div class="category animals">
+                            <div class="card">
+                                <h3>Animals</h3>
+                                <div class="top">
+                                    <img src="images/animals.jpg" alt="card">
+                                </div>
+                                <p>Animals Questions</p>
+                            </div>
+                        </div>
+                        <div class="category history">
+                            <div class="card">
+                                <h3>History</h3>
+                                <div class="top">
+                                    <img src="images/history.jpg" alt="card">
+                                </div>
+                                <p>History Questions</p>
+                            </div>
+                        </div>
+                        <div class="category human">
+                            <div class="card">
+                                <h3>Humans</h3>
+                                <div class="top">
+                                    <img src="images/humans.jpg" alt="card">
+                                </div>
+                                <p>Human Questions</p>
+                            </div>
+                        </div>
+                        <div class="category javascript">
+                            <div class="card">
+                                <h3>JS</h3>
+                                <div class="top">
+                                    <img src="images/javascript.jpg" alt="card">
+                                </div>
+                                <p>Javascript Questions</p>
+                            </div>
+                        </div>
+                        <div class="category science">
+                            <div class="card">
+                                <h3>Science</h3>
+                                <div class="top">
+                                    <img src="images/science.jpg" alt="card">
+                                </div>
+                                <p>Science Questions</p>
+                            </div>
+                        </div>
+                        <div class="category general1">
+                            <div class="card">
+                                <h3>General1</h3>
+                                <div class="top">
+                                    <img src="images/random1.png" alt="card">
+                                </div>
+                                <p>General Questions</p>
+                            </div>
+                        </div>
+                        <div class="category general2">
+                            <div class="card">
+                                <h3>General2</h3>
+                                <div class="top">
+                                    <img src="images/random2.jpg" alt="card">
+                                </div>
+                                <p>General Questions</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div id="sec-b" class="hide">
+                <section id="sec-2">
+                    <div class="quiz">
+                        <div class="topic">
+                            <img id="goBack" src="images/arrow-left-circle.svg" alt="back" class="back">
+                            <h1 id="topic"></h1>
+                        </div>
+                        <div class="score">
+                            <p class="your">Your Score</p>
+                            <p class="scorez"></p>
+                        </div>
+                        <div id="time">
+                            <p class="timez"></p>
+                        </div>
+                        <div class="highscores">
+                            <div class="global">
+                                <p id="remark"></p>
+                            </div>
+                            <div class="local">
+                                <p class="localz">Local Highscore</p>
+                                <p id="tiny"></p>
+                                <p class="usery"></p>
+                                <p class="loc-high"></p>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <p class="questionz">READY FOR THE TEST ?</p>
+                        </div>
+                        <div class="number">
+                            <p>Question</p>
+                            <p class="hide" id="countQuestion1"><span id="countQuestion"></span> /20</p>
+                        </div>
+                        
+                        <div class="options">
+                            <p class="option-1 hide opt"></p>
+                            <p class="option-2 hide opt"></p>
+                            <p class="option-3 hide opt"></p>
+                        </div>
+                        <div class="buttons">
+                            <button class="hide" id="submit">Done</button>
+                            <button class="hide" id="next">Next</button>
+                            <button id="test">Start</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <div id="pop-back" class="hide">
+        <h1>Leave Quiz Page?</h1>
+        <p>If you leave now, all progress would be lost, your unfinished quiz (if any) would end!</p>
+        <button id="leave">Leave</button>
+        <button id="stay">Stay</button>
+    </div>
+    <div id="pop-time-on" class="hide">
+        <h1>Set Timer?</h1>
+        <p>If timer is set, a round of quiz will last about 80 seconds and you'd have a local highscore.</p>
+        <button id="yesTime1">Yes</button>
+        <button id="noTime1">No</button>
+    </div>
+    <div id="pop-time-off" class="hide">
+        <h1>Remove Timer?</h1>
+        <p>If timer is removed, a round of quiz will last until you've answered the 20 questions, your score won't be saved in the local highscore.</p>
+        <button id="yesTime2">Yes</button>
+        <button id="noTime2">No</button>
+    </div>
+    <div id="aboutMe" class="hide">
+        <div class="box">
+            <img src="images/x-circle-fill.svg" alt="clear" id="clearAbout">
+            <h1>About Me</h1>
+            <p>
+                This site was created by <a class="blue" href="https://twitter.com/AnthonyJubemi">Pajiah Jubemi Anthony</a><br>
+                I <a class="blue" href="https://facebook.com/Jubemi.Genius">Anthony</a> is currently a student of University Of Benin Nigeria. I have a deep love for coding and I find it amazing; the things one can achieve with a keyboard and good imagination.
+                I love bringing the ideas in my head to reality by sitting down and writing the code. A wise man (ME) once said, <span class="blue">"When  you're addicted to your passion, you won't be limited by your actions."</span><br>
+                Hopefully I get better at this! I hope you enjoy my work &#10084;&#65039; 
+            </p>
+        </div>
+    </div>
+    <div id="help" class="hide">
+        <div class="box">
+            <img src="images/x-circle-fill.svg" alt="clear" id="clearHelp">
+            <h1>How to play</h1>
+            <p>
+                There are different quiz categories, click on anyone to that topic. <br>
+                You can either play with or without a countdown timer. <br>
+                If you decide NOT to play with a countdown timer your score WON'T be saved in your local Highscore. <br>
+                On the quiz page, Click "Start" to play,  "Next" to go to the next question, "Done" to submit after getting to the 20th question and "End" to stop the quiz when you haven't gotten to the 20th question. <br>
+                Remember to Enter your Username by clicking Username on the sidebar. Without enetring a username, you won't be able to play the game. 
+            </p>
+        </div>        
+    </div>
+    <div id="projects" class="hide">
+        <div class="box">
+            <img src="images/x-circle-fill.svg" alt="clear" id="clearProject">
+            <h1>My Other Projects</h1>
+            <p>
+                You can find some of my other projects on my <a href="https://github.com/Jubemi-Anthony">github link</a>
+            </p>
+        </div>
+    </div>
+</body>
+    <script src="scripts/script.js" type="module"></script>
+</html>
